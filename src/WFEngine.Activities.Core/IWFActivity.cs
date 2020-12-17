@@ -6,6 +6,7 @@ namespace WFEngine.Activities.Core
     public interface IWFActivity
     {
         void SetArguments(List<WFArgument> arguments);
-        string CompileActivity();
+        void SetVariables(List<WFVariable> variables);
+        void Run();
     }
 }
