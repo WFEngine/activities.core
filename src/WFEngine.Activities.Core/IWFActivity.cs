@@ -7,6 +7,7 @@ namespace WFEngine.Activities.Core
     {
         void SetArguments(List<WFArgument> arguments);
         void SetVariables(List<WFVariable> variables);
-        void Run();
+        void SetCurrentBlock(WFBlock Current);
+        WFResponse Run();
     }
 }
