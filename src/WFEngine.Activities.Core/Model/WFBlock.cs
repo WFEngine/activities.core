@@ -16,6 +16,8 @@ namespace WFEngine.Activities.Core.Model
             Variables = new List<WFVariable>();
             Arguments = new List<WFArgument>();
             Blocks = new List<WFBlock>();
+
+            IsContainer = false;
         }
     }
 }
