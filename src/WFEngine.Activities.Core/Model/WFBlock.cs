@@ -5,7 +5,7 @@ namespace WFEngine.Activities.Core.Model
 {
     public class WFBlock
     {
-        public string UniqueKey { get; set; }
+        public Guid UniqueKey { get; set; }
         public string Name { get; set; }
         public string AssemblyName { get; set; }
         public string ActivityName { get; set; }
@@ -21,7 +21,7 @@ namespace WFEngine.Activities.Core.Model
 
             IsContainer = false;
 
-            UniqueKey = Guid.NewGuid().ToString();
+            UniqueKey = Guid.NewGuid();
         }
     }
 }
